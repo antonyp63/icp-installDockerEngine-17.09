@@ -1,0 +1,35 @@
+[
+   {
+      "command": "install.sh",
+      "execmode": 0,
+      "filename": "icp-installDockerEngine-17.09.zip",
+      "keys": [
+        {
+        "locked": false,
+        "required": true,
+        "scriptdefaultvalue": "http:\/\/atlantis.syd.iic.ihost.com\/files\/software\/PureApplication\/Patterns\/IBM-Cloud-private\/Docker",
+        "scriptkey": "INSTALLER_BASEURL",
+        "scriptvalue": "http:\/\/atlantis.syd.iic.ihost.com\/files\/software\/PureApplication\/Patterns\/IBM-Cloud-private\/Docker",
+        "type": "string"
+     },
+     {
+        "locked": false,
+        "required": true,
+        "scriptdefaultvalue": "icp_docker_17.09_rhel_x86_64.bin",
+        "scriptkey": "INSTALLER_FILENAME",
+        "scriptvalue": "icp_docker_17.09_rhel_x86_64.bin",
+        "type": "string"
+      }
+    ],
+
+      "location": "\/tmp\/icp-ee\/docker",
+      "name": "icp-installDockerEngine",
+      "ostype": "linux\/unix",
+      "timeout": 60000000,
+      "type": "APPLICATION",
+      "version": "Docker 17.09"
+
+}
+
+
+]
