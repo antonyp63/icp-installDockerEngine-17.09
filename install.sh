@@ -11,11 +11,9 @@ sudo mkdir -p ${BIN_DOWNLOAD_DIR}
 
 #step 2 - download docker
 sudo wget -P ${BIN_DOWNLOAD_DIR} ${INSTALLER_BASEURL}/${INSTALLER_FILENAME}
-
 cd ${BIN_DOWNLOAD_DIR}
-
 #step 3 - install docker
 sudo chmod 755 ${INSTALLER_FILENAME}
 sudo ./${INSTALLER_FILENAME}
-
+#step 4 - enable docker
 sudo systemctl enable docker
